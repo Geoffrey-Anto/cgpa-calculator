@@ -42,4 +42,4 @@ def gpa():
 #get from env        
 PORT= os.environ.get("PORT", 5000)
         
-app.run(port=int(PORT))
+app.run(port=int(PORT), host="0.0.0.0")
