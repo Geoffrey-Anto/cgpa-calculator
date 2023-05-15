@@ -8,7 +8,15 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello_world():
-    return "<p>Hello, World!</p>"
+    return """
+            <h1> Welcome to GPA Calculator </h1>
+            <p> This is a simple GPA calculator </p>
+            
+            <p> To use this calculator, send a POST request to /gpa with a file named gpa.csv </p>
+            <p> The file should be in the following format: </p>
+            <p> credit,grade </p>
+            
+            """
 
 @app.route("/gpa", methods = ["POST"])
 def gpa():
