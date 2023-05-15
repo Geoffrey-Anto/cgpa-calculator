@@ -14,7 +14,7 @@ def hello_world():
             
             <p> To use this calculator, send a POST request to /gpa with a file named gpa.csv </p>
             <p> The file should be in the following format: </p>
-            nbsp;nbsp;nbsp;<p> credit,grade </p>
+            &nbsp;&nbsp;&nbsp;<p> credit,grade </p>
             
             """
 
