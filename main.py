@@ -1,7 +1,10 @@
 from flask import Flask, request
 from gpa import read_csv_server
 
+import os
+
 app = Flask(__name__)
+
 
 @app.route("/")
 def hello_world():
@@ -35,3 +38,8 @@ def gpa():
         return {
             "error": "Invalid file Or Server Error"
         }
+     
+#get from env        
+PORT= os.environ.get("PORT", 5000)
+        
+app.run(port=int(PORT))
